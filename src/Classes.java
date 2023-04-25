@@ -1,6 +1,6 @@
 public enum Classes {
     FIRST
-    ,SECOUND
+    ,SECOND
     ,THIRD;
 
 }

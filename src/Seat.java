@@ -22,4 +22,5 @@ public class Seat {
     public void setFree(boolean free) {
         isFree = free;
     }
+
 }
