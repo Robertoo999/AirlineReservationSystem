@@ -1,7 +1,7 @@
 public class Seat {
-    private int prize;
-    private int row;
-    private int column;
+    private final int prize;
+    private final int row;
+    private final int column;
     private boolean isFree=true;
 
     public Seat(int prize, int row, int column) {

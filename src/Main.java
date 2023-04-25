@@ -3,10 +3,11 @@ public class Main {
         Airplane airplane = new Airplane(3, 3, Classes.SECOND);
         airplane.fillSeats();
         airplane.showSeats();
-        System.out.println(ReservationSystem.checkIfSeatIsReserved(airplane,3,3));
+        System.out.println(ReservationSystem.checkIfSeatIsFree(airplane,3,3));
         ReservationSystem.reserveSeat(airplane,3,3);
         airplane.showSeats();
-        ReservationSystem.reserveSeat(airplane,3,3);
+        ReservationSystem.removeReservation(airplane,3,3);
+        airplane.showSeats();
 
 
 

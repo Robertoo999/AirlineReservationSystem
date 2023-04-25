@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Airplane {
-    private int rows;
+    private final int rows;
     private int columns;
 
     private Classes classes;
-    private List<List<Seat>> seats;
+    private final List<List<Seat>> seats;
 
 
     public Airplane(int columns, int rows, Classes classes) {
