@@ -33,6 +33,7 @@ public class ReservationSystem {
         if(!airplane.getSeats().get(column-1).get(row-1).isFree())
         {
             airplane.getSeats().get(column-1).get(row-1).setFree(true);
+            System.out.println("Congratulations, you just removed your reservation.");
         }
         else
         {
