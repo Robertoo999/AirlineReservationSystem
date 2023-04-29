@@ -8,11 +8,24 @@ public class Seat {
         this.prize = prize;
         this.row = row;
         this.column = column;
+
     }
 
     @Override
     public String toString() {
         return "Row="+row+" , column="+column+" , prize="+prize+" , isFree="+isFree+ " |";
+    }
+    public String view()
+    {
+        if(isFree)
+        {
+            return "O";
+        }
+        else if (!isFree)
+        {
+            return "X";
+        }
+        else return "Błąd";
     }
 
     public boolean isFree() {

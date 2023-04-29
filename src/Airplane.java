@@ -38,6 +38,14 @@ public class Airplane {
             System.out.println();
         }
     }
+    public void showBetterSeats() {
+        for (List<Seat> s : seats) {
+            for (Seat ss : s) {
+                System.out.print(ss.view() + " ");
+            }
+            System.out.println();
+        }
+    }
 
     public int getRows() {
         return rows;
